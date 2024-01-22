@@ -15,7 +15,11 @@ app.use(morgan('tiny'))
 app.use('/api/v1/places', placeRouter)
 
 
-// 404 handling
+app.get('/', (req, res) => {
+  res.status(200).json({correct: true, data: 'Hello everyone! It is the server for suburb API'})
+})
+
+// handling 404
 app.all('*', (req, res) => {
   return res.status(404).sendFile(path.resolve(__dirname, './not-found.html'))
 })
