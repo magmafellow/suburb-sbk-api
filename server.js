@@ -24,6 +24,6 @@ app.all('*', (req, res) => {
   return res.status(404).sendFile(path.resolve(__dirname, './not-found.html'))
 })
 
-app.listen(4789, (req, res) => {
-  console.log(`Server is listening on port ${4789}...`)
+app.listen(5000, (req, res) => {
+  console.log(`Server is listening on port ${5000}... http://localhost:5000/`)
 })

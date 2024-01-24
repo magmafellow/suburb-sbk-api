@@ -62,12 +62,6 @@ const places = [
     img: 'IMG_6561.jpg',
     deskription: 'Pathway with street lights'
   },
-  // {},
-  // {},
-  // {},
-  // {},
-  // {},
-  // {},
 ]
 
 module.exports = {
